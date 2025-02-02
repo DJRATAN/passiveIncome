@@ -23,68 +23,42 @@
   background-color: var(--surface-color);
 }
 
-.service-details .services-list a {
+.service-details .services-list button {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   display: flex;
+  width: 100%;
+  text-align: center;
   align-items: center;
-  padding: 12px 15px;
   margin-top: 15px;
   transition: 0.3s;
 }
 
-.service-details .services-list a:first-child {
+.service-details .services-list button:first-child {
   margin-top: 0;
 }
 
-.service-details .services-list a i {
+.service-details .services-list button i {
   font-size: 16px;
   margin-right: 8px;
   color: var(--accent-color);
 }
 
-.service-details .services-list a.active {
+.service-details .services-list button.active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.service-details .services-list a.active i {
+.service-details .services-list button.active i {
   color: var(--contrast-color);
 }
 
-.service-details .services-list a:hover {
+.service-details .services-list button:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   color: var(--accent-color);
 }
-
-.service-details .download-catalog a {
-  color: var(--default-color);
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.service-details .download-catalog a:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.service-details .download-catalog a:last-child {
-  padding-bottom: 0;
-}
-
-.service-details .download-catalog a i {
-  font-size: 24px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
-
-.service-details .download-catalog a:hover {
-  color: var(--accent-color);
-}
-
+ 
+ 
 .service-details .help-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -188,7 +162,7 @@
   padding: 0 30px;
   text-align: justify;
 }
- 
+
 .card-back {
   transform: rotateY(180deg);
   display: flex;
